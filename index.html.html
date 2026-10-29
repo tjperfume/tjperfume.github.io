@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TJ Perfume | Scent Your Presence — Luxury Fragrances, Amman</title>
+<meta name="description" content="TJ Perfume — luxury fragrances for men, women and unisex. 50ml 10 JOD / 100ml 20 JOD. Amman, Jordan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{obsidian:'#0A0A0B',charcoal:'#141416',ivory:'#FDFBF7',champagne:'#C9A86A',gold:'#D4AF37'},fontFamily:{serif:['"Cormorant Garamond"','serif'],sans:['"DM Sans"','sans-serif']}}}}
+</script>
+<style>
+*{scroll-behavior:smooth}
+:root{box-sizing:border-box}
+body{background:radial-gradient(1000px circle at 88% 6%,rgba(150,28,52,.60),transparent 62%),radial-gradient(900px circle at 6% 38%,rgba(120,22,44,.50),transparent 62%),radial-gradient(1000px circle at 92% 68%,rgba(150,28,52,.50),transparent 62%),radial-gradient(900px circle at 8% 98%,rgba(120,22,44,.45),transparent 62%),#0A0A0B;color:#FDFBF7;font-family:'DM Sans',sans-serif;overflow-x:hidden;font-weight:300}
+.serif{font-family:'Cormorant Garamond',serif}
+#navbar{padding-top:env(safe-area-inset-top,0px)}
+.nav-scrolled{background:rgba(10,10,11,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,106,.15)}
+.gold-gradient{background:linear-gradient(135deg,#C9A86A 0%,#D4AF37 50%,#B8945A 100%)}
+.text-gold{background:linear-gradient(135deg,#C9A86A,#F5E6C8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.pimg{background:radial-gradient(circle at 50% 35%,#202023 0%,#0f0f11 70%);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;border-radius:4px;transition:box-shadow .4s}
+.pcard:hover .pimg{box-shadow:0 24px 50px rgba(201,168,106,.14)}
+.tab{font-size:12px;letter-spacing:.25em;padding:6px 2px;color:rgba(255,255,255,.45);border-bottom:1px solid transparent;transition:.2s}
+.tab:hover{color:#fff}.tab.active{color:#fff;border-bottom-color:#C9A86A}
+.of-label{display:block;font-size:11px;letter-spacing:.2em;color:rgba(255,255,255,.45);margin-bottom:8px}
+.of-input{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.2);color:#FDFBF7;padding:12px 2px;font-size:16px;font-family:inherit;font-weight:300;color-scheme:dark;border-radius:0}
+select.of-input{padding-right:8px}
+.of-input:focus{outline:none;border-bottom-color:#C9A86A}
+.of-input option{background:#141416;color:#FDFBF7}
+.of-input.invalid{border-bottom-color:#f87171}
+.sec-wine{background:none}
+.hair{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,106,.4),transparent)}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0A0A0B}::-webkit-scrollbar-thumb{background:#C9A86A;border-radius:10px}
+</style>
+</head>
+<body class="antialiased">
+
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
+<a href="#home" class="serif text-[22px] lg:text-[24px] tracking-[0.3em] font-light">TJ <span class="font-semibold text-gold">PERFUME</span></a>
+<div class="hidden md:flex items-center gap-9 text-[11px] tracking-[0.25em]">
+<a href="#collection" onclick="filterCategory('all')" class="hover:text-champagne transition">COLLECTION</a>
+<a href="#collection" onclick="filterCategory('Men')" class="hover:text-champagne transition">MEN</a>
+<a href="#collection" onclick="filterCategory('Women')" class="hover:text-champagne transition">WOMEN</a>
+<a href="#collection" onclick="filterCategory('Unisex')" class="hover:text-champagne transition">UNISEX</a>
+<a href="#order" class="border border-champagne/60 text-champagne px-6 py-2.5 hover:bg-champagne hover:text-obsidian transition">ORDER</a>
+</div>
+<button id="menuBtn" class="md:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5" aria-label="Menu"><span class="w-6 h-[1px] bg-white block"></span><span class="w-6 h-[1px] bg-white block"></span><span class="w-4 h-[1px] bg-white block self-end"></span></button>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-obsidian/95 backdrop-blur-xl border-t border-white/10 px-6 py-8">
+<div class="flex flex-col gap-6 text-xs tracking-[0.25em]">
+<a href="#collection" onclick="filterCategory('all')" class="mobileLink">COLLECTION</a><a href="#collection" onclick="filterCategory('Men')" class="mobileLink">MEN</a><a href="#collection" onclick="filterCategory('Women')" class="mobileLink">WOMEN</a><a href="#collection" onclick="filterCategory('Unisex')" class="mobileLink">UNISEX</a><a href="#order" class="mobileLink text-champagne">ORDER</a>
+</div></div>
+</nav>
+
+<div class="text-center px-6" style="padding-top:calc(84px + env(safe-area-inset-top,0px))"><p class="text-[11px] leading-relaxed text-champagne/70 max-w-3xl mx-auto tracking-wide font-light">Please note: The bottles and packaging displayed on this website are for illustrative purposes only and may differ from the actual product packaging.</p></div>
+
+<section id="home" class="sec-wine relative px-6 lg:px-8 py-14 lg:py-24 overflow-hidden">
+<div class="absolute inset-0 opacity-40" style="background:radial-gradient(520px circle at 70% 50%,rgba(201,168,106,.14),transparent 70%)"></div>
+<div class="relative max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center">
+<div class="text-center lg:text-left">
+<p class="text-champagne text-[11px] tracking-[0.45em] mb-6">AMMAN · JORDAN</p>
+<h1 class="serif text-[52px] lg:text-[88px] leading-[0.92] font-light">Scent<br><span class="italic text-gold">your</span> presence.</h1>
+<p class="text-white/55 mt-6 max-w-sm mx-auto lg:mx-0">Luxury fragrances for men, women and unisex.</p>
+<div class="mt-9 flex flex-wrap gap-4 justify-center lg:justify-start items-center">
+<a href="#collection" class="gold-gradient text-obsidian px-9 py-4 text-xs tracking-[0.25em] font-semibold hover:opacity-90 transition">EXPLORE</a>
+<span class="text-[11px] tracking-[0.2em] text-white/45">50ML · 10 JOD &nbsp;&nbsp; 100ML · 20 JOD</span>
+</div></div>
+<div class="flex justify-center"><div class="bottle-slot w-[52%] max-w-[260px]" data-shape="0" data-c1="#f7c3d0" data-c2="#e48fa8"></div></div>
+</div>
+</section>
+
+<div class="hair"></div>
+
+<section id="collection" class="py-16 lg:py-24 px-6 lg:px-8">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-10">
+<h2 class="serif text-[40px] lg:text-[54px] font-light leading-none">The <span class="italic text-gold">Collection</span></h2>
+</div>
+<div class="flex justify-center gap-8 mb-8" id="categoryTabs">
+<button class="tab active" data-cat="all">ALL</button><button class="tab" data-cat="Men">MEN</button><button class="tab" data-cat="Women">WOMEN</button><button class="tab" data-cat="Unisex">UNISEX</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-[1fr_180px_180px] gap-x-6 gap-y-2 max-w-[820px] mx-auto mb-12">
+<div class="col-span-2 md:col-span-1"><label class="sr-only" for="searchBox">Search</label><input id="searchBox" type="search" class="of-input" placeholder="Search a scent, note or season"></div>
+<div><label class="sr-only" for="fScent">Scent</label><select id="fScent" class="of-input"></select></div>
+<div><label class="sr-only" for="fSeason">Season</label><select id="fSeason" class="of-input"><option value="all">All seasons</option><option>Spring</option><option>Summer</option><option>Autumn</option><option>Winter</option></select></div>
+</div>
+<div id="productGrid" class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 lg:gap-x-6 lg:gap-y-14"></div>
+<p class="text-center mt-16 text-white/50 text-sm">Looking for a different perfume? <button type="button" onclick="orderCustom()" class="text-champagne underline underline-offset-4">We can make it for you.</button></p>
+</div>
+</section>
+
+<div class="hair"></div>
+
+<section id="order" class="sec-wine py-16 lg:py-24 px-6 lg:px-8">
+<div class="max-w-[620px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="serif text-[40px] lg:text-[54px] font-light leading-none">Your <span class="italic text-gold">Order</span></h2>
+</div>
+<form id="orderForm" class="grid gap-7" novalidate>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave empty<input id="oHp" tabindex="-1" autocomplete="off"></label></div>
+<div class="grid sm:grid-cols-2 gap-7">
+<div><label class="of-label" for="oProd">PERFUME</label><select id="oProd" class="of-input"></select></div>
+<div><label class="of-label" for="oSize">SIZE</label><select id="oSize" class="of-input"></select></div>
+</div>
+<div id="customRow" class="hidden"><label class="of-label" for="oCustom">PERFUME NAME YOU WANT</label><input id="oCustom" class="of-input" type="text" placeholder="Type the perfume name"></div>
+<div class="grid grid-cols-2 gap-7 items-end">
+<div><label class="of-label" for="oQty">QUANTITY</label><input id="oQty" class="of-input" type="number" min="1" max="20" value="1" inputmode="numeric"></div>
+<button type="button" id="addBtn" class="border border-champagne/70 text-champagne py-3 text-xs tracking-[0.2em] hover:bg-champagne hover:text-obsidian transition">ADD TO ORDER</button>
+</div>
+<div id="cartList"></div>
+<div class="flex items-baseline justify-between"><span class="text-xs tracking-[0.25em] text-white/45">TOTAL</span><span id="oTotal" class="serif text-4xl text-gold">0 JOD</span></div>
+<div class="hair"></div>
+<div><label class="of-label" for="oName">FULL NAME</label><input id="oName" class="of-input" type="text" autocomplete="name" required></div>
+<div><label class="of-label" for="oPhone">PHONE NUMBER</label><input id="oPhone" class="of-input" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XXXXXXXX" required></div>
+<div><label class="of-label" for="oAddr">HOME ADDRESS</label><textarea id="oAddr" class="of-input" rows="2" autocomplete="street-address" required></textarea></div>
+<div><label class="of-label" for="oNote">NOTES (OPTIONAL)</label><input id="oNote" class="of-input" type="text"></div>
+<p id="oError" class="text-red-400 text-sm hidden" role="alert"></p>
+<button type="submit" id="submitBtn" class="gold-gradient text-obsidian py-4 text-xs tracking-[0.25em] font-semibold hover:opacity-90 transition">SUBMIT ORDER</button>
+</form>
+<div id="orderSuccess" class="hidden mt-10 text-center" role="status"><h3 class="serif text-3xl text-gold">Order submitted</h3><p class="text-white/70 mt-3 text-sm leading-relaxed">Your order has been submitted successfully! Thank you for choosing TJ Perfume. We will contact you shortly to confirm your order.</p><p id="orderRef" class="text-champagne text-xs tracking-[0.15em] mt-3"></p></div>
+<div id="orderDone" class="hidden mt-10">
+<div class="hair mb-8"></div>
+<h3 class="serif text-3xl text-gold text-center">Your order is ready</h3>
+<p class="text-white/65 mt-3 text-sm leading-relaxed text-center">Press <b>Copy</b>, then paste the message in our Instagram chat and press <b>Send</b>. Your order is not placed until you send it.</p>
+<p id="copyNote" class="text-champagne text-xs mt-3 text-center"></p>
+<textarea id="orderText" class="of-input mt-4 !border !border-white/15 !p-3 rounded" rows="12" readonly></textarea>
+<div class="grid sm:grid-cols-2 gap-3 mt-4">
+<button type="button" id="copyBtn" class="border border-champagne/70 text-champagne py-3 text-xs tracking-[0.2em]">COPY ORDER MESSAGE</button>
+<button type="button" id="igBtn" class="gold-gradient text-obsidian py-3 text-xs tracking-[0.2em] font-semibold">OPEN INSTAGRAM CHAT</button>
+</div>
+<p class="text-[11px] text-white/35 mt-4 text-center">On a laptop? Open <a class="text-champagne underline" href="https://www.instagram.com/tj_perfume99/" target="_blank" rel="noopener">instagram.com/tj_perfume99</a>, press Message and paste.</p>
+</div>
+</div>
+</section>
+
+<footer class="py-12 px-6 text-center" style="padding-bottom:calc(3rem + env(safe-area-inset-bottom,0px))">
+<div class="hair mb-10"></div>
+<p class="serif text-2xl tracking-[0.3em]">TJ <span class="text-gold font-semibold">PERFUME</span></p>
+<a href="https://www.instagram.com/tj_perfume99/" target="_blank" rel="noopener" class="inline-block mt-4 text-champagne text-sm tracking-[0.15em]">@tj_perfume99</a>
+<p class="text-white/35 text-[11px] tracking-[0.2em] mt-4">© 2026 TJ PERFUME · AMMAN, JORDAN</p>
+</footer>
+
+<div id="detailModal" role="dialog" aria-modal="true" aria-label="Perfume details" style="display:none" class="fixed inset-0 z-[60] items-center justify-center p-4 bg-black/80">
+<div id="detailBody" class="relative bg-charcoal rounded-xl p-6 lg:p-10 w-full max-w-[780px] max-h-[90vh] overflow-y-auto"></div>
+</div>
+
+<script>
+/* ===== CATALOG DATA (edit freely) =====
+   id, name, cat (Men/Women/Unisex), fam (fragrance families), s (short description),
+   t/h/b (indicative top/heart/base notes), ch (character), i (intensity), se (seasons), oc (occasions),
+   sizes (price per size, JOD), image (optional: put your own photo URL or data URI here), feat (featured), d (optional custom long description) */
+const SIZES=[{ml:50,price:10},{ml:100,price:20}];
+const FAM={Oud:['#6b3a22','#24100a'],Woody:['#c79a5c','#6b4a22'],Floral:['#f7c3d0','#e48fa8'],Sweet:['#f6c795','#dc8d5c'],Musk:['#f0ebe3','#cdc5b8'],Citrus:['#f8e885','#eab72e'],Amber:['#e6a845','#a8641c'],Fresh:['#a6dcea','#4f9fc0'],Spicy:['#c9503a','#7a1f12'],Oriental:['#b8648a','#5e2340'],Vanilla:['#f5e3b3','#dbb976'],Aquatic:['#8fd3e6','#2f7fa6'],Fruity:['#f9b3a0','#e2705a'],Powdery:['#f3e3e8','#d4b6c0'],Leather:['#7a4a30','#2e1a10'],Aromatic:['#b9d8a8','#6f9a5a'],Green:['#cfe6a0','#7fa24a'],Smoky:['#8d8580','#3a3532'],Gourmand:['#e7b27a','#a8602c']};
+const RAW=[
+['Obsidian Oud','Men',['Oud','Woody','Smoky'],'Deep smoky oud wrapped in warm amber and dark woods, made for statement evenings.','Saffron, black pepper','Smoky oud, rose','Amber, patchouli, musk','Bold, smoky, sophisticated','Strong','Autumn, Winter','Evening, special events',1],
+['Steel Vetiver','Men',['Woody','Green','Aromatic'],'Crisp vetiver and cedar with a cool citrus opening, sharp and polished for the office.','Bergamot, lemon','Vetiver, sage','Cedarwood, white musk','Clean, woody, polished','Moderate','Spring, Autumn','Office, daily wear'],
+['Noir Leather','Men',['Leather','Spicy','Smoky'],'Black pepper and supple leather over a smoky, tobacco-tinged base.','Black pepper, pink pepper','Leather, tobacco leaf','Smoked woods, amber','Dark, bold, rugged','Strong','Autumn, Winter','Evening, date night'],
+['Midnight Amber','Men',['Amber','Oriental','Spicy'],'Warm amber and soft spice with a dry woody finish, made for cool nights.','Cardamom, orange peel','Cinnamon, amber','Dry woods, vanilla, musk','Warm, smooth, enveloping','Moderate to strong','Autumn, Winter','Evening, date night'],
+['Cedar Reserve','Men',['Woody','Aromatic'],'Dry cedarwood and aromatic herbs for a calm, composed and classic signature.','Lavender, juniper','Cedarwood, geranium','Sandalwood, vetiver, musk','Composed, classic, dry','Moderate','All year','Office, business, daily wear'],
+['Royal Oriental','Men',['Oriental','Amber','Spicy'],'Saffron, incense and resins resting on a rich amber-musk base.','Saffron, nutmeg','Incense, labdanum','Amber, benzoin, musk','Rich, regal, resinous','Strong','Autumn, Winter','Special events, evening'],
+['Blue Horizon','Men',['Fresh','Aquatic','Citrus'],'Sea breeze, grapefruit and cool mint for a bright, energetic everyday scent.','Grapefruit, mint','Sea notes, green leaves','Driftwood, light musk','Fresh, clean, energetic','Light to moderate','Spring, Summer','Daily wear, sport, casual'],
+['Desert Spice','Men',['Spicy','Woody','Amber'],'Cardamom and cinnamon over sunlit woods, a warm and spicy statement.','Cardamom, ginger','Cinnamon, cedar','Amber, tonka, woods','Warm, spicy, confident','Moderate to strong','Autumn, Winter','Evening, gatherings'],
+['Rose Mirage','Women',['Floral','Powdery'],'Soft rose and peony over a powdery musk, romantic and graceful.','Pink pepper, pear','Rose, peony','Powdery musk, cedar','Romantic, soft, elegant','Moderate','Spring, Summer','Daytime, weddings, date night',1],
+['Blush Vanilla','Women',['Vanilla','Sweet','Gourmand'],'Creamy vanilla with praline sweetness and a soft, musky skin finish.','Mandarin, pink pepper','Praline, orchid','Vanilla, tonka bean, musk','Sweet, creamy, cozy','Moderate','Autumn, Winter','Date night, evening'],
+['Golden Jasmine','Women',['Floral','Sweet'],'Radiant jasmine with a honeyed glow, feminine and luminous.','Mandarin, green notes','Jasmine, ylang-ylang','Honey, amber, sandalwood','Luminous, feminine, rich','Moderate','Spring, Summer','Evening, special events'],
+['Pink Praline','Women',['Gourmand','Sweet'],'Caramelised praline lifted by a bright spark of pink pepper.','Pink pepper, bergamot','Praline, caramel','Vanilla, musk','Sweet, playful, comforting','Moderate','Autumn, Winter','Casual, date night'],
+['Peony Silk','Women',['Floral','Fruity','Powdery'],'Juicy lychee and silky peony resting on soft white cedar.','Lychee, bergamot','Peony, rose petals','White cedar, musk','Soft, juicy, airy','Light to moderate','Spring, Summer','Daily wear, office, brunch'],
+['Velvet Orchid','Women',['Oriental','Floral'],'Dark orchid and plum wrapped in velvety patchouli, a mysterious evening scent.','Plum, bergamot','Orchid, warm spices','Patchouli, vanilla, amber','Mysterious, velvety, sensual','Strong','Autumn, Winter','Evening, date night'],
+['Caramel Muse','Women',['Gourmand','Sweet','Vanilla'],'Salted caramel, vanilla and amber in a warm, dessert-like embrace.','Salted caramel, pear','Vanilla, almond','Amber, tonka, musk','Sweet, warm, indulgent','Moderate to strong','Autumn, Winter','Evening, cold weather'],
+['Blossom Air','Women',['Fresh','Floral','Fruity'],'Cherry blossom, pear and white musk, light as a spring breeze.','Pear, citrus','Cherry blossom, freesia','White musk, blonde woods','Airy, fresh, cheerful','Light','Spring, Summer','Daily wear, casual, work'],
+['White Musk','Unisex',['Musk','Powdery','Fresh'],'Clean, soft musk with a touch of white florals, a minimalist second-skin scent.','Aldehydes, bergamot','White florals, cotton','White musk, soft woods','Clean, soft, minimal','Light to moderate','All year','Daily wear, office',1],
+['Citrus Veil','Unisex',['Citrus','Fresh','Green'],'Sparkling bergamot and grapefruit with a green tea freshness.','Bergamot, grapefruit','Green tea, neroli','Musk, light woods','Bright, zesty, clean','Light','Spring, Summer','Daily wear, sport, travel'],
+['Amber Skin','Unisex',['Amber','Musk'],'A warm amber-musk that sits close to the skin, subtle and addictive.','Pink pepper, mandarin','Amber, soft spice','Skin musk, vanilla','Warm, intimate, soft','Moderate','Autumn, Winter','Daily wear, evening'],
+['Aqua Silk','Unisex',['Aquatic','Fresh','Musk'],'Sea salt and airy musk in a smooth, cooling aquatic scent.','Sea salt, lemon','Marine accord, lily','Driftwood, musk','Cool, clean, breezy','Light','Spring, Summer','Daily wear, beach, sport'],
+['Oud & Rose','Unisex',['Oud','Floral','Oriental'],'Damascus rose softened by smooth oud and saffron, a classic Arabian pairing.','Saffron, bergamot','Damascus rose, geranium','Oud, amber, musk','Rich, floral, noble','Strong','Autumn, Winter','Special events, evening'],
+['Vanilla Smoke','Unisex',['Vanilla','Smoky','Woody'],'Sweet vanilla bean wrapped in curls of incense smoke and warm woods.','Cinnamon, bergamot','Incense, smoky woods','Vanilla, tonka, cedar','Smoky-sweet, warm, moody','Moderate to strong','Autumn, Winter','Evening, date night'],
+['Green Tea Cloud','Unisex',['Green','Fresh','Aromatic'],'Green tea and mint over a cloud of white musk, calm and refreshing.','Green tea, mint','Jasmine tea, basil','White musk, cedar','Calm, herbal, fresh','Light','Spring, Summer','Daily wear, office'],
+['Sandal Dream','Unisex',['Woody','Powdery','Musk'],'Creamy sandalwood and soft powdery musk in a cashmere-like blend.','Cardamom, iris','Creamy sandalwood, violet','Cashmere woods, musk','Creamy, soft, comforting','Moderate','Autumn, Winter, Spring','Office, daily wear, evening']
+];
+const products=RAW.map((r,k)=>{const p={id:'tj-'+String(k+1).padStart(3,'0'),name:r[0],cat:r[1],fam:r[2],s:r[3],t:r[4],h:r[5],b:r[6],ch:r[7],i:r[8],se:r[9],oc:r[10],feat:!!r[11],sizes:SIZES,image:'',shape:k%5};p.c=FAM[p.fam[0]]||FAM.Amber;return p;});
+const DET={'Obsidian Oud':['Saffron, black pepper, cardamom, bergamot','Smoky oud, Bulgarian rose, cedarwood, incense','Amber, patchouli, musk, vetiver, vanilla'],'Steel Vetiver':['Bergamot, lemon, grapefruit, green apple','Vetiver, sage, geranium, lavender','Cedarwood, white musk, oakmoss, ambroxan'],'Noir Leather':['Black pepper, pink pepper, juniper, cardamom','Leather, tobacco leaf, cypress, patchouli','Smoked woods, amber, tonka bean, vanilla'],'Midnight Amber':['Cardamom, orange peel, pink pepper, bergamot','Cinnamon, amber, nutmeg, labdanum','Dry woods, vanilla, musk, benzoin'],'Cedar Reserve':['Lavender, juniper, bergamot, cardamom','Cedarwood, geranium, clary sage, cypress','Sandalwood, vetiver, white musk, amber'],'Royal Oriental':['Saffron, nutmeg, cardamom, orange blossom','Incense, labdanum, rose, myrrh','Amber, benzoin, musk, oud, vanilla'],'Blue Horizon':['Grapefruit, mint, lemon, bergamot','Sea notes, green leaves, lavender, geranium','Driftwood, light musk, cedar, ambroxan'],'Desert Spice':['Cardamom, ginger, pink pepper, orange','Cinnamon, cedar, saffron, cloves','Amber, tonka bean, sandalwood, patchouli'],'Rose Mirage':['Pink pepper, pear, bergamot, lychee','Rose, peony, magnolia, jasmine','Powdery musk, cedar, vanilla, sandalwood'],'Blush Vanilla':['Mandarin, pink pepper, pear, bergamot','Praline, orchid, jasmine, almond','Vanilla, tonka bean, musk, sandalwood'],'Golden Jasmine':['Mandarin, green notes, bergamot, neroli','Jasmine sambac, ylang-ylang, orange blossom, tuberose','Honey, amber, sandalwood, vanilla'],'Pink Praline':['Pink pepper, bergamot, raspberry, mandarin','Praline, caramel, rose, jasmine','Vanilla, musk, sandalwood, tonka bean'],'Peony Silk':['Lychee, bergamot, pear, pink grapefruit','Peony, rose petals, freesia, lily of the valley','White cedar, musk, amber, sandalwood'],'Velvet Orchid':['Plum, bergamot, black currant, saffron','Orchid, warm spices, jasmine, rose','Patchouli, vanilla, amber, sandalwood'],'Caramel Muse':['Salted caramel, pear, bergamot, pink pepper','Vanilla, almond, orange blossom, praline','Amber, tonka bean, musk, sandalwood'],'Blossom Air':['Pear, citrus, bergamot, green apple','Cherry blossom, freesia, jasmine, peony','White musk, blonde woods, cedar, amber'],'White Musk':['Aldehydes, bergamot, pear, pink pepper','White florals, cotton, jasmine, lily','White musk, soft woods, cedar, amber'],'Citrus Veil':['Bergamot, grapefruit, lemon, mandarin','Green tea, neroli, mint, jasmine','Musk, light woods, cedar, amber'],'Amber Skin':['Pink pepper, mandarin, bergamot','Amber, soft spice, rose, labdanum','Skin musk, vanilla, sandalwood, tonka bean'],'Aqua Silk':['Sea salt, lemon, bergamot, mint','Marine accord, lily, jasmine, cyclamen','Driftwood, musk, ambroxan, cedar'],'Oud & Rose':['Saffron, bergamot, pink pepper','Damascus rose, geranium, jasmine, incense','Oud, amber, musk, sandalwood, patchouli'],'Vanilla Smoke':['Cinnamon, bergamot, pink pepper, cardamom','Incense, smoky woods, birch, labdanum','Vanilla bean, tonka bean, cedar, amber'],'Green Tea Cloud':['Green tea, mint, bergamot, lemon','Jasmine tea, basil, lavender, neroli','White musk, cedar, amber, vetiver'],'Sandal Dream':['Cardamom, iris, bergamot, pink pepper','Creamy sandalwood, violet, rose, jasmine','Cashmere woods, musk, vanilla, amber']};
+products.forEach(p=>{const d=DET[p.name];if(d){p.t=d[0];p.h=d[1];p.b=d[2];}});
+function longDesc(p){if(p.d)return p.d;const who=p.cat==='Unisex'?'everyone (unisex)':p.cat.toLowerCase();return `${p.name} is a ${p.i.toLowerCase()} ${p.fam[0].toLowerCase()} fragrance for ${who}. It opens with ${p.t.toLowerCase()}, moves into ${p.h.toLowerCase()} and settles on ${p.b.toLowerCase()}. Its character is ${p.ch.toLowerCase()}, best suited to ${p.oc.toLowerCase()} in ${p.se.toLowerCase()}.`;}
+const byId=id=>products.find(p=>p.id===id);
+const priceText=p=>p.sizes.map(z=>z.ml+'ml '+z.price+' JOD').join(' · ');
+const trendingIds=products.filter(p=>p.feat).map(p=>p.id);
+
+/*PURE*/
+function unitPrice(sizes,ml){const z=sizes.find(x=>x.ml===ml);return z?z.price:null;}
+function clampQty(v){const n=parseInt(v,10);return isNaN(n)?1:Math.max(1,Math.min(20,n));}
+function cartTotal(items){return items.reduce((t,i)=>t+i.unit*i.qty,0);}
+function validPhone(v){return /^\+?[0-9][0-9\s-]{6,17}$/.test(String(v).trim());}
+function addToCart(items,it){const f=items.find(x=>x.key===it.key&&x.ml===it.ml);if(f){f.qty=Math.min(20,f.qty+it.qty);}else{items.push(Object.assign({},it));}return items;}
+function buildMessage(c,items,notes){
+ const L=['Hello TJ Perfume! I would like to place an order.','','CUSTOMER INFORMATION','','Full Name: '+c.name,'Phone Number: '+c.phone,'Delivery Address: '+c.address,'','ORDER DETAILS',''];
+ items.forEach((it,k)=>{L.push((k+1)+'. Perfume: '+it.name,'   Category: '+it.cat,'   Size: '+it.ml+'ml','   Quantity: '+it.qty,'   Unit Price: '+it.unit+' JOD','   Subtotal: '+(it.unit*it.qty)+' JOD','');});
+ L.push('Total Order Amount: '+cartTotal(items)+' JOD','');
+ if(notes&&notes.trim())L.push('Additional Notes: '+notes.trim(),'');
+ L.push('Please confirm my order and let me know the delivery details.','','Thank you!');
+ return L.join('\n');
+}
+/*ENDPURE*/
+
+/* ===== Bottle illustrations (display only) ===== */
+let bid=0;
+const SHAPES=[
+ {b:'<rect x="42" y="112" width="116" height="172" rx="20"/>',cap:'<rect x="76" y="34" width="48" height="58" rx="6"/>',col:[82,90,36,8],nk:[88,96,24,18],lab:[70,162,60,74],hl:'<rect x="52" y="126" width="6" height="146" rx="3"/>'},
+ {b:'<ellipse cx="100" cy="204" rx="84" ry="82"/>',cap:'<circle cx="100" cy="60" r="28"/>',col:[82,90,36,8],nk:[90,88,20,36],lab:[72,168,56,68],hl:'<ellipse cx="52" cy="180" rx="6" ry="30"/>'},
+ {b:'<rect x="62" y="96" width="76" height="190" rx="12"/>',cap:'<rect x="70" y="22" width="60" height="62" rx="4"/>',col:[76,82,48,8],nk:[90,90,20,8],lab:[74,150,52,92],hl:'<rect x="69" y="108" width="5" height="164" rx="2"/>'},
+ {b:'<path d="M100 110C150 110 166 200 151 250C146 275 126 286 100 286C74 286 54 275 49 250C34 200 50 110 100 110Z"/>',cap:'<rect x="82" y="40" width="36" height="50" rx="8"/>',col:[86,88,28,7],nk:[91,94,18,20],lab:[72,168,56,70],hl:'<ellipse cx="62" cy="200" rx="5" ry="40"/>'},
+ {b:'<polygon points="100,106 158,150 158,256 100,290 42,256 42,150"/>',cap:'<polygon points="84,36 116,36 124,86 76,86"/>',col:[80,84,40,8],nk:[90,92,20,16],lab:[72,164,56,74],hl:'<polygon points="52,156 62,150 62,252 52,246"/>'}
+];
+function bottleSVG(shape,c1,c2){
+ const id='b'+(bid++),s=SHAPES[shape%5],l=s.lab,cx=l[0]+l[2]/2;
+ return `<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TJ Perfume bottle illustration" style="width:100%;height:auto;display:block;filter:drop-shadow(0 18px 22px rgba(0,0,0,.55))">
+<defs><linearGradient id="${id}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>
+<linearGradient id="${id}c" x1="0" x2="1"><stop offset="0" stop-color="#3b3b3d"/><stop offset=".5" stop-color="#0c0c0d"/><stop offset="1" stop-color="#2c2c2e"/></linearGradient>
+<linearGradient id="${id}g" x1="0" x2="1"><stop offset="0" stop-color="#8a6a2c"/><stop offset=".5" stop-color="#f3dc8e"/><stop offset="1" stop-color="#8a6a2c"/></linearGradient></defs>
+<rect x="${s.nk[0]}" y="${s.nk[1]}" width="${s.nk[2]}" height="${s.nk[3]}" fill="#cfcfd2"/>
+<g fill="url(#${id}l)" stroke="rgba(255,255,255,.5)" stroke-width="1.6">${s.b}</g>
+<g fill="rgba(255,255,255,.28)">${s.hl}</g>
+<rect x="${l[0]}" y="${l[1]}" width="${l[2]}" height="${l[3]}" rx="2" fill="#F4EAE5"/>
+<text x="${cx}" y="${l[1]+l[3]*0.52}" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-weight="600" font-size="${Math.round(l[2]*0.55)}" fill="#7A2E3E">TJ</text>
+<text x="${cx}" y="${l[1]+l[3]-9}" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="5" letter-spacing="1.1" fill="#7A2E3E">PERFUME STORE</text>
+<g fill="url(#${id}c)" stroke="rgba(255,255,255,.25)" stroke-width="1">${s.cap}</g>
+<rect x="${s.col[0]}" y="${s.col[1]}" width="${s.col[2]}" height="${s.col[3]}" rx="2" fill="url(#${id}g)"/></svg>`;
+}
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function bottleHTML(p){return p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" style="width:100%;height:auto;display:block">`:bottleSVG(p.shape,p.c[0],p.c[1]);}
+function mountSlots(){document.querySelectorAll('.bottle-slot').forEach(el=>{el.innerHTML=bottleSVG(+el.dataset.shape||0,el.dataset.c1||'#f7c3d0',el.dataset.c2||'#e48fa8');});}
+
+/* ===== Catalog UI ===== */
+const FAMILIES=['Fresh','Woody','Sweet','Floral','Oriental','Oud','Musk','Vanilla','Citrus','Spicy','Amber','Aquatic','Fruity','Powdery','Leather','Aromatic','Green','Smoky','Gourmand'];
+const SEASONS=['Spring','Summer','Autumn','Winter'];
+const seasonsOf=p=>/all year/i.test(p.se)?SEASONS.slice():SEASONS.filter(x=>new RegExp(x,'i').test(p.se));
+const GENDER={Men:"Men's",Women:"Women's",Unisex:'Unisex'};
+const ALIAS={Men:'men mens male man',Women:'women womens female woman ladies',Unisex:'unisex'};
+const STOP=['perfume','perfumes','fragrance','fragrances','scent','scents','for','and','the','with'];
+function hay(p){return [p.name,'TJ Perfume',p.cat,ALIAS[p.cat],GENDER[p.cat],p.fam.join(' '),p.s,p.t,p.h,p.b,p.ch,p.oc,p.i,seasonsOf(p).join(' ')].join(' ').toLowerCase().replace(/[\u2019']/g,'');}
+function matchQuery(p,query){const terms=query.toLowerCase().replace(/[\u2019']/g,'').split(/[^a-z0-9&]+/).filter(t=>t&&!STOP.includes(t));if(!terms.length)return true;const h=hay(p);return terms.every(t=>h.includes(t));}
+let activeCat='all',activeScent='all',activeSeason='all',q='';
+const g=id=>document.getElementById(id);
+function card(p){
+ const from=Math.min(...p.sizes.map(z=>z.price));
+ return `<article class="pcard cursor-pointer" tabindex="0" role="button" aria-label="${esc(p.name)} details" onclick="openDetails('${p.id}')" onkeydown="if(event.key==='Enter')openDetails('${p.id}')">
+  <div class="pimg"><div class="w-[52%]">${bottleHTML(p)}</div></div>
+  <p class="text-champagne text-[10px] tracking-[0.3em] mt-4">${p.fam[0].toUpperCase()} · ${GENDER[p.cat].toUpperCase()}</p>
+  <h3 class="serif text-xl lg:text-2xl mt-1 leading-tight">${esc(p.name)}</h3>
+  <p class="text-white/45 text-sm mt-1">From ${from} JOD</p></article>`;
+}
+function renderGrid(){
+ const f=products.filter(p=>(activeCat==='all'||p.cat===activeCat)&&(activeScent==='all'||p.fam.includes(activeScent))&&(activeSeason==='all'||seasonsOf(p).includes(activeSeason))&&matchQuery(p,q));
+ g('productGrid').innerHTML=f.length?f.map(card).join(''):'<p class="col-span-full text-center text-white/50 py-12">No perfumes match your search.</p>';
+}
+function renderTrending(){}
+function setCat(c){activeCat=c;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.cat===c));renderGrid();}
+function filterCategory(c){setCat(c);}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setCat(b.dataset.cat)));
+g('fScent').innerHTML='<option value="all">All scents</option>'+FAMILIES.map(f=>`<option>${f}</option>`).join('');
+g('fScent').addEventListener('change',e=>{activeScent=e.target.value;renderGrid();});
+g('fSeason').addEventListener('change',e=>{activeSeason=e.target.value;renderGrid();});
+g('searchBox').addEventListener('input',e=>{q=e.target.value.trim();renderGrid();});
+g('menuBtn').addEventListener('click',()=>g('mobileMenu').classList.toggle('hidden'));
+document.querySelectorAll('.mobileLink').forEach(a=>a.addEventListener('click',()=>g('mobileMenu').classList.add('hidden')));
+window.addEventListener('scroll',()=>g('navbar').classList.toggle('nav-scrolled',window.scrollY>40));
+
+/* ===== Details ===== */
+const modal=g('detailModal'),mBody=g('detailBody');
+function openDetails(id){
+ const p=byId(id);if(!p)return;
+ mBody.innerHTML=`<button type="button" id="mClose" aria-label="Close" class="absolute top-4 right-5 text-3xl text-white/50 hover:text-champagne leading-none">×</button>
+ <div class="grid md:grid-cols-[230px_1fr] gap-8 items-center">
+  <div class="pimg"><div class="w-[58%]">${bottleHTML(p)}</div></div>
+  <div>
+   <p class="text-champagne text-[10px] tracking-[0.3em]">${p.fam.join(' · ').toUpperCase()} · ${GENDER[p.cat].toUpperCase()}</p>
+   <h3 class="serif text-4xl mt-2 font-light">${esc(p.name)}</h3>
+   <p class="text-white/60 text-sm mt-3 leading-relaxed">${esc(p.s)}</p>
+   <dl class="mt-6 grid grid-cols-[64px_1fr] gap-y-3 text-sm">
+    <dt class="text-[11px] tracking-[0.2em] text-champagne pt-0.5">TOP</dt><dd class="text-white/80">${esc(p.t)}</dd>
+    <dt class="text-[11px] tracking-[0.2em] text-champagne pt-0.5">HEART</dt><dd class="text-white/80">${esc(p.h)}</dd>
+    <dt class="text-[11px] tracking-[0.2em] text-champagne pt-0.5">BASE</dt><dd class="text-white/80">${esc(p.b)}</dd>
+   </dl>
+   <p class="text-white/45 text-sm mt-5">${esc(p.se)} · ${esc(p.oc)}</p>
+   <div class="grid grid-cols-2 gap-4 mt-7 items-end">
+    <select id="mSize" class="of-input" aria-label="Size">${p.sizes.map(z=>`<option value="${z.ml}">${z.ml}ml — ${z.price} JOD</option>`).join('')}</select>
+    <button type="button" id="mAdd" class="gold-gradient text-obsidian py-3 text-xs tracking-[0.2em] font-semibold">ADD TO ORDER</button>
+   </div>
+   <p class="text-[10px] text-white/30 mt-5">Notes are indicative · Not rated yet</p>
+  </div></div>`;
+ g('mClose').onclick=closeDetails;
+ g('mAdd').onclick=()=>{addItem(p.id,+g('mSize').value,1);closeDetails();g('order').scrollIntoView({behavior:'smooth'});};
+ modal.style.display='flex';document.body.style.overflow='hidden';
+}
+function closeDetails(){modal.style.display='none';document.body.style.overflow='';}
+modal.addEventListener('click',e=>{if(e.target===modal)closeDetails();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetails();});
+
+/* ===== Order form ===== */
+const IG_DM='https://ig.me/m/'+'tj_perfume99',IG_PROFILE='https://www.instagram.com/tj_perfume99/';
+const $=id=>document.getElementById(id);
+const oProd=$('oProd'),oSize=$('oSize'),oQty=$('oQty'),customRow=$('customRow'),oCustom=$('oCustom');
+let cart=[],submitting=false;
+oProd.innerHTML='<option value="__custom">✨ Other perfume (type the name below)</option>'+products.map(p=>`<option value="${p.id}">${esc(p.name)} (${p.cat})</option>`).join('');
+oProd.value=products[0].id;
+function curSizes(){return oProd.value==='__custom'?SIZES:byId(oProd.value).sizes;}
+function fillSizes(keep){const prev=keep||oSize.value;oSize.innerHTML=curSizes().map(z=>`<option value="${z.ml}">${z.ml}ml — ${z.price} JOD</option>`).join('');if([...oSize.options].some(o=>o.value==prev))oSize.value=prev;}
+function pending(){
+ const custom=oProd.value==='__custom',p=custom?null:byId(oProd.value),ml=+oSize.value,qty=clampQty(oQty.value);
+ const name=custom?'Custom perfume request: '+oCustom.value.trim():p.name;
+ if(custom&&!oCustom.value.trim())return null;
+ return{key:custom?'custom:'+oCustom.value.trim().toLowerCase():p.id,name,cat:custom?'Custom request':p.cat,ml,qty,unit:unitPrice(curSizes(),ml)};
+}
+function renderCart(){
+ const box=$('cartList');
+ box.innerHTML=cart.length?cart.map((it,i)=>`<div class="flex items-center justify-between gap-3 py-3 border-b border-white/10 text-sm">
+  <div class="min-w-0"><p class="serif text-lg truncate">${esc(it.name)}</p><p class="text-white/50 text-xs">${it.ml}ml · ${it.unit} JOD × ${it.qty} = ${it.unit*it.qty} JOD</p></div>
+  <div class="flex items-center gap-2 shrink-0"><button type="button" data-a="dec" data-i="${i}" class="w-8 h-8 border border-white/20 rounded" aria-label="Decrease">−</button><span class="w-5 text-center">${it.qty}</span><button type="button" data-a="inc" data-i="${i}" class="w-8 h-8 border border-white/20 rounded" aria-label="Increase">+</button><button type="button" data-a="del" data-i="${i}" class="w-8 h-8 text-white/50 hover:text-champagne" aria-label="Remove">✕</button></div></div>`).join(''):'<p class="text-white/35 text-sm py-1">Choose a perfume above and press ADD TO ORDER.</p>';
+ updateTotal();
+}
+function updateTotal(){const items=cart.length?cart:(pending()?[pending()]:[]);$('oTotal').textContent=cartTotal(items)+' JOD';}
+function addItem(id,ml,qty){const p=byId(id);addToCart(cart,{key:p.id,name:p.name,cat:p.cat,ml,qty,unit:unitPrice(p.sizes,ml)});renderCart();}
+$('cartList').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i,it=cart[i];if(!it)return;if(b.dataset.a==='inc')it.qty=Math.min(20,it.qty+1);if(b.dataset.a==='dec')it.qty=Math.max(1,it.qty-1);if(b.dataset.a==='del')cart.splice(i,1);renderCart();});
+oProd.addEventListener('change',()=>{customRow.classList.toggle('hidden',oProd.value!=='__custom');fillSizes();updateTotal();});
+[oSize,oQty,oCustom].forEach(el=>el.addEventListener('input',updateTotal));
+function orderNow(id){oProd.value=id;oProd.dispatchEvent(new Event('change'));$('order').scrollIntoView({behavior:'smooth'});}
+function orderCustom(){oProd.value='__custom';oProd.dispatchEvent(new Event('change'));$('order').scrollIntoView({behavior:'smooth'});setTimeout(()=>oCustom.focus({preventScroll:true}),600);}
+$('addBtn').addEventListener('click',()=>{const it=pending();const err=$('oError');if(!it){err.textContent='Please type the name of the perfume you want.';err.classList.remove('hidden');oCustom.classList.add('invalid');return;}err.classList.add('hidden');oCustom.classList.remove('invalid');addToCart(cart,it);renderCart();});
+function showErr(msg,fields){const e=$('oError');e.textContent=msg;e.classList.remove('hidden');['oName','oPhone','oAddr','oCustom'].forEach(f=>$(f).classList.toggle('invalid',fields.includes(f)));if(fields[0])$(fields[0]).focus();}
+function legacyCopy(t){try{const ta=$('orderText');ta.value=t;ta.focus();ta.select();ta.setSelectionRange(0,99999);return document.execCommand('copy');}catch(e){return false;}}
+function copyText(t){return new Promise(res=>{try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>res(true),()=>res(legacyCopy(t)));return;}}catch(e){}res(legacyCopy(t));});}
+/* Order API: leave empty to use the copy-to-Instagram flow. Set to '/api/order' when deployed with the backend package. */
+const ORDER_API='';
+let reqId=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2));
+async function submitToApi(d){
+ submitting=true;const sb=$('submitBtn');sb.disabled=true;sb.textContent='SENDING…';
+ const ctrl=new AbortController(),to=setTimeout(()=>ctrl.abort(),20000);
+ try{
+  const r=await fetch(ORDER_API,{method:'POST',headers:{'Content-Type':'application/json'},signal:ctrl.signal,body:JSON.stringify({requestId:reqId,hp:$('oHp').value,name:d.name,phone:d.phone,address:d.addr,notes:d.notes,items:d.items.map(i=>({id:String(i.key).startsWith('custom:')?'custom':i.key,name:i.name,ml:i.ml,qty:i.qty}))})});
+  const j=await r.json().catch(()=>({}));
+  if(!r.ok||!j.ok)throw new Error(j.error||'Server error');
+  $('orderRef').textContent='ORDER REFERENCE: '+j.id;$('orderSuccess').classList.remove('hidden');$('orderDone').classList.add('hidden');
+  $('orderSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+  cart=[];renderCart();['oName','oPhone','oAddr','oNote','oCustom'].forEach(f=>$(f).value='');
+  reqId=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2));
+ }catch(err){showErr('We could not submit your order. Please check your connection and try again. Your details are still on this page.',[]);}
+ finally{clearTimeout(to);submitting=false;sb.disabled=false;sb.textContent='SUBMIT ORDER';}
+}
+$('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();if(submitting)return;
+ const name=$('oName').value.trim(),phone=$('oPhone').value.trim(),addr=$('oAddr').value.trim(),bad=[],msgs=[];
+ if(name.length<2){bad.push('oName');msgs.push('your full name');}
+ if(!validPhone(phone)){bad.push('oPhone');msgs.push('a valid phone number');}
+ if(addr.length<5){bad.push('oAddr');msgs.push('your delivery address');}
+ let items=cart;
+ if(!cart.length){const it=pending();if(!it){bad.push('oCustom');msgs.push('the perfume name you want');}else items=[it];}
+ if(bad.length){showErr('Please enter '+msgs.join(', ')+'.',bad);return;}
+ showErr('',[]);$('oError').classList.add('hidden');
+ if(ORDER_API){submitToApi({name,phone,addr,notes:$('oNote').value,items});return;}
+ submitting=true;const sb=$('submitBtn');sb.disabled=true;sb.style.opacity=.6;setTimeout(()=>{submitting=false;sb.disabled=false;sb.style.opacity=1;},2000);
+ const msg=buildMessage({name,phone,address:addr},items,$('oNote').value);
+ $('orderText').value=msg;
+ const done=$('orderDone');done.classList.remove('hidden');
+ copyText(msg).then(ok=>{$('copyNote').textContent=ok?'Your order message was copied automatically.':'We could not copy automatically. Press COPY ORDER MESSAGE or select the text below.';});
+ window.open(IG_DM,'_blank');
+ done.scrollIntoView({behavior:'smooth',block:'center'});
+});
+$('copyBtn').addEventListener('click',async()=>{const ok=await copyText($('orderText').value);$('copyBtn').textContent=ok?'COPIED ✓':'SELECT THE TEXT AND COPY';setTimeout(()=>{$('copyBtn').textContent='COPY ORDER MESSAGE';},2500);});
+$('igBtn').addEventListener('click',()=>window.open(IG_DM,'_blank'));
+mountSlots();fillSizes();renderGrid();renderTrending();renderCart();
+</script>
+</body>
+</html>
